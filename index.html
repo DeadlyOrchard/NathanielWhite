@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NathanielWhite</title>
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/dark_scheme.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <script src="dropdown.js"></script>
+
+    <nav>
+      <div class="row" id="academic-history-dropper">
+        <i class="fa fa-folder"></i>
+        <a onclick="drop('academic-history-dropper', 'academic-history-content')">academic_history</a>
+      </div>
+      <div id="academic-history-content" class="drop-content">
+        <div class="row">
+          <i class="fa fa-file"></i>
+          <a href="#missouri-state-university">missouri_state_university</a>
+        </div>
+        <div class="row">
+          <i class="fa fa-file"></i>
+          <a href="#southern-new-hampshire-university">southern_newhampsire_university</a>
+        </div>
+      </div>
+
+      <div class="row" id="projects-dropper">
+        <i class="fa fa-folder"></i>
+        <a onclick="drop('projects-dropper', 'projects-content')">projects</a>
+      </div>
+      <div id="projects-content" class="drop-content">
+        <div class="row">
+          <i class="fa fa-file"></i>
+          <a href="#game-of-life">game_of_life</a>
+        </div>
+        <div class="row">
+          <i class="fa fa-file"></i>
+          <a href="#palette-maker">palette_maker</a>
+        </div>
+      </div>
+
+      <div id="socials-dropper" class="row">
+        <i class="fa fa-folder"></i>
+        <a onclick="drop('socials-dropper', 'socials-content')">socials</a>
+      </div>
+      <div id="socials-content" class="drop-content">
+        <div class="row">
+          <i class="fa fa-file"></i>
+          <a href="***">Email</a>
+        </div>
+        <div class="row">
+          <i class="fa fa-file"></i>
+          <a href="***">Discord</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <h1 class="pageTitle">./NathanielWhite/</h1>
+
+      <section id="academic-history">
+        <h1 class="section-hdr">academic-history/</h1>
+
+        <article id="missouri-state-university">
+          <h1 class="article-hdr">missouri-state-university/</h1>
+          <p class="article-par">I attended MSU for two and a half years. Most of that time was spent on a music education degree with tuba as my primary instrument. While I didn't finish the degree, most of my first two years were spent on music courses, rather than general education requirements (ask my advisor, I still don't know why). In those courses, I learned how to play trumpet, french horn, baritone, and piano as well as how to use music theory to play sheet music more effectively. In summer 2021, I traveled to over ten states performing the Troopers Drum and Bugle Corps.</p>
+          <p class="article-par">After the revelation that performing arts are not for me (performance anxiety), I changed to a bachelor's in computer science. My time at this university post major change was short lived due to all the challenges that Covid brought to the school. By fall of 2022, I moved on to Southern New Hampshire University.</p>
+          <p class="article-par">I have many great memories from this institution. Playing in massive performance halls, hearing the most inspiring melodies. Truly, words do not suffice. I think this <a href="***">video</a> speaks for itself.</p>
+        </article>
+
+        <article id="southern-new-hampshire-university">
+          <h1 class="article-hdr">southern-new-hampshire-university/</h1>
+          <p class="article-par">I currently attend SNHU pursuing a Computer Science Bachelor's with a software engineering concentration. </p>
+        </article>
+      </section>
+
+      <section id="projects">
+        <h1 class="section-hdr">projects/</h1>
+
+        <article id="game-of-life">
+          <h1 class="article-hdr">game-of-life/</h1>
+          <p class="article-par"><a href="https://github.com/DeadlyOrchard/ConwaysGameOfLife">repo</a></p>
+          <h2 class="article-subhdr">background</h2>
+          <ul class="article-ls">
+            <li>I first came across this game when I had discovered Python and Pygame. I had just started programming, and wanted to see if I could implement it.</li>
+            <li>Of course, I failed hilariously, but it was quite the thought experiment!</li>
+            <li>A few days ago, a peer of mine, <a href="***">Luke</a> implemented their own in Golang using the terminal. So, I thought I'd have a go at it.</li>
+          </ul>
+          <h2 class="article-subhdr">libs/frameworks</h2>
+          <ul class="article-ls">
+            <li><a href="***">SDL2</a></li>
+            <li><a href="***">flecs</a></li>
+          </ul>
+        </article>
+
+      </section>
+
+    </main>
+  </body>
+</html>

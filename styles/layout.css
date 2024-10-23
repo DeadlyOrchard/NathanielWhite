@@ -1,0 +1,77 @@
+nav {
+  position: fixed;
+
+  display: grid;
+  grid-auto-flow: row;
+
+  width: 20vw;
+  top: 30vh;
+}
+
+nav .drop-content {
+  display: none;
+  grid-auto-flow: row;
+  margin-left: var(--indent);
+}
+
+nav .dropped-content {
+  display: grid;
+}
+
+nav a {
+  line-height: 2;
+  display: block;
+}
+
+nav .row i {
+  padding: 6px;
+  margin: 2px;
+  float: left;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 60vw;
+  margin: 64px 20vw;
+}
+
+.pageTitle {
+  margin: 0;
+  text-indent: var(--indent);
+}
+
+.section-hdr {
+  margin: 0;
+  line-height: 2;
+  padding-left: calc(var(--indent) * 2);
+}
+
+.article-hdr {
+  padding: 4px calc(var(--indent) * 3);
+  margin: 0;
+}
+
+.article-subhdr {
+  padding: 4px var(--indent);
+  margin: 16px calc(var(--indent) * 2);
+}
+
+.article-par, .article-ls {
+  padding: 8px var(--indent);
+  margin: 0 calc(var(--indent) * 3);
+}
+
+.article-par:nth-child(2) {
+  margin-top: 16px;
+}
+
+.article-par:last-child, .article-ls:last-child {
+  margin-bottom: 16px;
+}
+
+:root {
+  --indent: 48px;
+}

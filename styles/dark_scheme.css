@@ -1,0 +1,103 @@
+body {
+  background-color: var(--black);
+}
+
+/* Navigation styling */
+
+nav {
+  background-color: var(--dark-grey);
+}
+
+nav a {
+  color: var(--paragraph);
+}
+
+/* All folders, no files */
+nav .row:not(nav .drop-content .row) {
+  border-top: dashed 1px var(--light-grey);
+  border-bottom: dashed 1px var(--light-grey);
+}
+
+/* All files except the last one in the folder */
+nav .drop-content .row:not(nav .drop-content .row:last-of-type) {
+  border-bottom: dashed 1px var(--light-grey);
+}
+
+/* The last file in the last folder */
+nav .drop-content:last-of-type .row {
+  border-bottom: dashed 1px var(--light-grey);
+}
+
+nav .row i {
+  color: var(--light-grey);
+}
+
+nav .row:hover a {
+  background-color: var(--grey);
+  color: var(--header);
+}
+
+nav .row:hover {
+  cursor: pointer;
+}
+
+nav .row:hover i, nav .row:hover a {
+  color: var(--brown);
+}
+
+/* Main content */
+
+main {
+  border-right: var(--brown) 2px solid;
+  border-left: var(--brown) 2px solid;
+  line-height: 1.5;
+}
+
+.article-par a, .article-ls a {
+  color: var(--brown);
+}
+
+.pageTitle {
+  color: var(--brown);
+}
+
+.section-hdr {
+  font-size: 21pt;
+  color: var(--header);
+  background-color: var(--dark-grey);
+}
+
+.article-hdr {
+  font-size: 14pt;
+  color: var(--subheader);
+  background-color: var(--grey);
+}
+
+.article-subhdr {
+  font-size: 14pt;
+  color: var(--subheader);
+  background-color: var(--grey);
+}
+
+.article-par, .article-ls {
+  color: var(--paragraph);
+  background-color: var(--dark-grey);
+}
+
+:root {
+  /* Background Colors */
+  --black: #050505;
+  --dark-grey: #111;
+  --grey: #222;
+
+  /* Use sparingly */
+  --brown: #77473E;
+
+  /* Text Colors */
+  --header: #999;
+  --subheader: #777;
+  --paragraph: #666;
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
