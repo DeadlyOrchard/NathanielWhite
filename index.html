@@ -16,16 +16,16 @@
     <nav>
       <div class="row" id="academic-history-dropper">
         <i class="fa fa-folder"></i>
-        <a onclick="drop('academic-history-dropper', 'academic-history-content')">academic_history</a>
+        <a onclick="drop('academic-history-dropper', 'academic-history-content')">academic-history</a>
       </div>
       <div id="academic-history-content" class="drop-content">
         <div class="row">
           <i class="fa fa-file"></i>
-          <a href="#missouri-state-university">missouri_state_university</a>
+          <a href="#missouri-state-university">missouri-state-university</a>
         </div>
         <div class="row">
           <i class="fa fa-file"></i>
-          <a href="#southern-new-hampshire-university">southern_newhampsire_university</a>
+          <a href="#southern-new-hampshire-university">southern-newhampsire-university</a>
         </div>
       </div>
 
@@ -36,11 +36,15 @@
       <div id="projects-content" class="drop-content">
         <div class="row">
           <i class="fa fa-file"></i>
-          <a href="#game-of-life">game_of_life</a>
+          <a href="#game-of-life">game-of-life</a>
         </div>
         <div class="row">
           <i class="fa fa-file"></i>
-          <a href="#palette-maker">palette_maker</a>
+          <a href="#palette-maker">palette-maker</a>
+        </div>
+        <div class="row">
+          <i class="fa fa-file"></i>
+          <a href="#fourier-series">fourier-series</a>
         </div>
       </div>
 
@@ -93,8 +97,42 @@
           </ul>
           <h2 class="article-subhdr">libs/frameworks</h2>
           <ul class="article-ls">
-            <li><a href="***">SDL2</a></li>
+            <li><a href="https://github.com/libsdl-org/SDL/tree/SDL2">SDL2</a></li>
             <li><a href="***">flecs</a></li>
+          </ul>
+        </article>
+
+        <article id="fourier-series">
+          <h1 class="article-hdr">fourier-series</h1>
+          <p class="article-par"><a href="https://github.com/DeadlyOrchard/FourierSeries">repo</a></p>
+          <h2 class="article-subhdr">background</h2>
+          <ul class="article-ls">
+            <li>After seeing a 3Blue1Brown (YouTube) video on the discrete fourier transform, I wanted to implmement it myself.</li>
+            <ul>
+              <li>I followed a CodingTrain (YouTube) video where he implemented a drawing machine in javascript using the algorithm.</li>
+              <li>I didn't want it to be too easy though, so I opted to use C++ and SDL2, much lower-level than javascript.</li>
+              <li>I started this project in May 2023, but I touched it up just slightly recently. These were the changes:</li>
+            </ul>
+          </ul>
+          <ul class="article-ls">
+            <li>Build system (CMake)</li>
+            <ul>
+              <li>Removed pointer arithmetic, switched to pass by reference</li>
+              <li>Removed unnecessary params in FourierSeries constructor</li>
+              <li>Made curly braces consistent</li>
+            </ul>
+          </ul>
+          <ul class="article-ls">
+            <li>I made the source.txt file using <a target="_blank" href="https://www.blender.org/">Blender</a>, a free 3d animation software. Here are steps I took to make it:</li>
+            <ul>
+              <li>Found a suitable image, then traced out the path to be drawn.</li>
+              <li>Assigned an object to follow the path. </li>
+              <li>Wrote a short python script to use the Blender API to step through each frame and write the object's position to a file.</li>
+            </ul>
+          </ul>
+          <h2 class="article-subhdr">libs/frameworks</h2>
+          <ul class="article-ls">
+            <li>While the project uses <a href="https://github.com/libsdl-org/SDL/tree/SDL2">SDL2</a>, no downloads are necessary. Instead, CMake will fetch the SDL2 package for you.</li>
           </ul>
         </article>
 
